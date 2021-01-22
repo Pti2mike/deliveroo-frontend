@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+body {
+  font-family: "IBM Plex Sans Reg";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: white;
+  border-bottom: solid 1px lightgray;
+  height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.wrapper,
+.wrapper-2 {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper-2 {
+  display: flex;
+}
+
+.logo {
+  height: 50px;
+}
+
+img {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  font-family: "Stratos Deliveroo Web";
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+h2 {
+  padding: 20px 0 20px;
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+.resto {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.resto-info {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.resto > img {
+  width: 350px;
+}
+
+.container {
+  background-color: #f3f5f5;
+  display: flex;
+}
+
+.menu-info {
+  width: 70%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.menusplit {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menusPart {
+  display: flex;
+  object-fit: cover;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.menusDetail {
+  background-color: white;
+  height: 160px;
+  width: 400px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  margin-right: 15px;
+  padding: 15px;
+}
+
+.menusDetail > div > p {
+  margin-right: 10px;
+}
+
+.img-menusDetail {
+  height: 130px;
+  width: 130px;
+}
+
+.description {
+  color: lightgray;
+  font-size: 14px;
+}
+
+.menusinfo {
+  display: flex;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart {
+  width: 350px;
+}
+
+.cart-content {
+  box-shadow: 0 22px 24px 0 rgba(46, 51, 51, 0.07);
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.cart-items,
+.cart-subtotal {
+  display: flex;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.cart-items span {
+  flex: 1;
+}
+
+.cart-items :last-child {
+  text-align: right;
+}
+
+.cart-button {
+  display: block;
+  margin: 10px;
+  border-radius: 5px;
+  padding: 10px;
+  background: #00cdbd;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.cart-quantity {
+  margin-right: 10px;
+}
+
+.cart-subtotal {
+  flex-direction: column;
+}
+
+.cart-subtotal div :last-child span {
+  text-align: right;
+}
+
+.cart-total {
+  padding: 10px;
 }

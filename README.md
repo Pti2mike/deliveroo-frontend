@@ -1,3 +1,9 @@
+# Todos
+
+- Cart must be sticky
+- Add a star when meal is popular
+- Add a className for popular with condition in order to render star and comment orange
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
